@@ -29,4 +29,5 @@ while index < length / 2:
 
 # Double result since array is even and all matches should count twice
 result *= 2
+
 print "The total sum is: %d" % result
