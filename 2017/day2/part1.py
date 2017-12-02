@@ -16,7 +16,7 @@
 
 # What is the checksum for the spreadsheet in your puzzle input?
 
-# Load string of digits from file and strip of whitespace
+# Load spreadsheet data from input file
 f = open("input.txt", "r")
 lines = f.readlines()
 
