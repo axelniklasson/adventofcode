@@ -10,9 +10,6 @@
 # 123123 produces 12.
 # 12131415 produces 4.
 # What is the solution to your new captcha?
-#
-#
-# Solution complexity: O(n/2) --> O(n)
 
 # Load string of digits from file and strip of whitespace
 f = open("input.txt", "r")
