@@ -284,14 +284,14 @@ def task1(layers, delay = 0):
 
 def task2(layers):
     delay = 0
-    caught = False
-    while not caught:
+    caught = True
+    while caught:
         delay += 1
-        caught = True
+        caught = False
         for layer in layers:
             range = layers[layer]
             if (layer + delay) % (2 * (range - 1)) == 0:
-                caught = False
+                caught = True
                 break
 
     return delay
