@@ -51,9 +51,25 @@ def task1(lst, sequences):
 
     return lst
 
+def task2(lst, sequences):
+    seen = []
+    for i in range(10000):
+        lst = task1(lst, sequences)
+        if lst in seen:
+            print "prev found after iteration %d" % i
+            break
+        else:
+            seen.append(lst)
+
+    return lst
+
 if __name__ == "__main__":
     lst = list("abcdefghijklmnop")
     sequences = open("input.txt").read().rstrip().split(",")
 
-    print "Task1"
-    print "The order of the program is %s." % "".join(task1(lst, sequences))
+    # print "Task1"
+    # print "The order of the program is %s." % "".join(task1(lst, sequences))
+    
+    print "\nTask2"
+    lst = list("abcdefghijklmnop")
+    print "The order of the program after one billion dances is %s." % "".join(task2(lst, sequences))
