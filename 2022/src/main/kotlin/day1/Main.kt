@@ -54,7 +54,7 @@ fun partTwo() {
         }
     }
 
-        println("max calories carried by three elves: ${maxCalories.sum()}")
+    println("max calories carried by three elves: ${maxCalories.sum()}")
 }
 
 fun main() {
