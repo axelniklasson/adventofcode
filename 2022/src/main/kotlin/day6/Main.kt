@@ -59,6 +59,6 @@ fun partTwo() {
 }
 
 fun main() {
-//    partOne()
+    partOne()
     partTwo()
 }
